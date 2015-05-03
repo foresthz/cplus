@@ -1,0 +1,4 @@
+class DictReader{
+  public:
+    string "";
+}

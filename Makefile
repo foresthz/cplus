@@ -1,6 +1,7 @@
 default:
 	# parenthesis is needed when specify variable
-	prjname=$(prj)
+	prjname:=$(prj)
+	echo $(prjname)
 	if [ -z $(prjname) ]; then
 		echo "please specify prj variable"
 	else	

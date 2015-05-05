@@ -1,14 +1,14 @@
 default:
 	# parenthesis is needed when specify variable
-	prjname:=$(prj)
-	echo $(prjname)
-	if [ -z $(prjname) ]; then
-		echo "please specify prj variable"
-	else	
-		echo $(prj)
-		g++ hello.cpp -o hello.exe
-	fi	
+	echo $(prj)
+	#if [ -z "$(prj)" ] ; then
+	#	echo "please specify prj variable"
+	#else	
+	#	echo $(prj)
+	#	g++ hello.cpp -o hello.exe
+	#fi	
+	g++ hello.cpp -o hello.exe
 
 clean:
-	rm *.exe *.obj
+	rm *.exe *.obj -f
 
